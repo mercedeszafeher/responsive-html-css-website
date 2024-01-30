@@ -21,4 +21,16 @@ Client Requirements:
 This project challenges our creativity and expertise in crafting a visually appealing and functional website using only the fundamental building blocks of web development – HTML and CSS.
 By following the client's requirements and employing best practices, we aim to deliver a website that meets both aesthetic and functional expectations.
 
+Our website features the following sections:
+
+* Homepage: An aesthetically pleasing landing page that highlights key snowboard products, promotions, and establishes the brand identity.
+  
+* Product Catalog: Create a dedicated page showcasing our range of snowboards, complete with detailed descriptions, images, and specifications to assist customers in making well-informed decisions.
+  
+* About Us: Present a page narrating the company's story, mission, and values to forge a connection with potential customers and establish credibility.
+  
+* Contact Us: Include a page with contact information, an inquiry form, and possibly a map for the physical location to enhance accessibility and customer support.
+  
+* Blog/News: Integrate a blog or news page to share industry trends, snowboarding tips, and company updates. This not only engages visitors but also improves the website's search engine visibility.
+
 Here you can check out our Project: https://mercedeszafeher.github.io/responsive-html-css-website/
