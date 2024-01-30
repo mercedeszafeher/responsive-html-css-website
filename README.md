@@ -7,7 +7,7 @@ limiting the technology stack to these fundamental web development languages.
 
 Client Requirements:
 
- *Responsive Design: The website must be accessible and visually appealing across various devices and screen sizes. Employ CSS media queries to ensure responsiveness.
+* Responsive Design: The website must be accessible and visually appealing across various devices and screen sizes. Employ CSS media queries to ensure responsiveness.
 
 * Pages Structure: Create a cohesive structure with a landing page and 2-4 additional pages. These pages should maintain a consistent design theme.
   
