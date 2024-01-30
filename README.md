@@ -21,4 +21,4 @@ Client Requirements:
 This project challenges our creativity and expertise in crafting a visually appealing and functional website using only the fundamental building blocks of web development – HTML and CSS.
 By following the client's requirements and employing best practices, we aim to deliver a website that meets both aesthetic and functional expectations.
 
-Here you can check out our Project:
+Here you can check out our Project: https://mercedeszafeher.github.io/responsive-html-css-website/
