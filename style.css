@@ -27,6 +27,8 @@ header {
     background-color: var(--quote-text);
     color: var(--secondary-color);
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
 }
 
 .main-nav {

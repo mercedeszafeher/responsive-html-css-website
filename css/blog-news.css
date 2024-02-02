@@ -25,6 +25,8 @@ header {
     background-color: var(--quote-text);
     color: var(--secondary-color);
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
 }
 
 .main-nav {
@@ -45,8 +47,8 @@ header {
 }
   
 .push-right img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     object-fit: cover;
     border-radius: 50%;
 }

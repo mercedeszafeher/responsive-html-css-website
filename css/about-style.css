@@ -36,7 +36,7 @@ body{
     display: flex;
     flex:2;
     justify-content: end;
-    padding-right: 13%;
+    padding-right: 10%;
 }
 
 .navLink{
