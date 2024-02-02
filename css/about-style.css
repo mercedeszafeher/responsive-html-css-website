@@ -153,6 +153,7 @@ body{
     border-radius: 10px;
     margin-bottom: 5%;
     text-decoration: none;
+    box-shadow: 0 3px 3px  #96a5c3;
 }
 
 #go-up:hover{
