@@ -72,7 +72,6 @@ body{
 .about-us-content{
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: start; 
     margin: 5% 15% 2% 15% ; 
     color: #1F2937;
@@ -87,17 +86,22 @@ body{
 
 .about-us-text{
     display: flex;
-    flex: 1;
     flex-direction: column;
     font-weight: 400;
     background-color: #FFFFFF;
-    line-height: 1.6;
 }
 
 .about-us-text h2{
     font-size: 38px;
     color: #1F2937;
     font-weight: 800;
+    margin: 0;
+}
+
+.about-us-text p{
+    line-height: 1.6;
+    text-align: justify;
+
 }
 
 .mission{
@@ -108,6 +112,7 @@ body{
 .mission img, .values img{
     width: 500px;
     height: auto;
+    border-radius: 20px;
 }
 
 .values{
@@ -125,3 +130,23 @@ body{
     height: 80px;
     bottom: 0;
 }
+
+@media only screen and (max-width: 970px) {
+    .about-us-text-row{
+        flex-direction: column;
+    }
+
+    .mission{
+        margin: 0;
+        padding: 0;
+    }
+
+    .values{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    .mission img, .values img{
+        margin-bottom: 5%;
+    }
+  }
