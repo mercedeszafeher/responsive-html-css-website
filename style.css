@@ -100,3 +100,10 @@ a:hover {
 .content-left{
     color: var(--text-color);
 }
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: var(--text-color);
+    text-align: center;
+}
