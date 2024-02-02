@@ -102,7 +102,6 @@ a:hover {
 #product-links {
   background-color: var(--primary-color);
 }
-
 .product-nav {
   display: flex;
   justify-content: center;
@@ -118,9 +117,6 @@ a:hover {
   margin-right: auto;
   font-size: 24px;
 }
-/* .product-nav li {
-  padding: ;
-} */
 #product-links a:hover {
   color: #2196f3;
 }
