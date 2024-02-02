@@ -20,6 +20,7 @@ body {
     margin: auto 0;
     font-family: "Roboto", sans-serif;
     background-color: #1f2937;
+    padding: 0;
 }
 
 header {
@@ -98,6 +99,10 @@ main{
     box-shadow:0 4px 4px 0 rgb(80, 80, 80);
 }
 
+li a:hover::after{
+    width: 90%;
+}
+
 #explore-more:hover{
     background-color: #649df9;
     border: 2px solid #649df9;
@@ -111,7 +116,6 @@ main{
 
 #first-row{
     font-size: 36px;
-
 }
 
 #second-row{
@@ -138,8 +142,6 @@ main{
     height: auto;
     text-shadow: 0 4px 4px 0 rgb(162, 162, 162);
 }
-
-
 
 footer {
     background-color: var(--primary-color);

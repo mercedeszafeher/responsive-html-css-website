@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype'), url(./fonts/Roboto-Black.ttf) format('truetype'),
+    url(./fonts/Roboto-Italic.ttf) format('truetype'),url(./fonts/Roboto-LightItalic.ttf) format('truetype');
+
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F2937;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1F2937;
+    height: 80px;
+    padding: 0 0 0 15%;
+}
+
+.navbar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: 15%;
+}
+
+.navbar ul{
+    display: flex;
+    flex:2;
+    justify-content: end;
+    padding-right: 13%;
+}
+
+.navLink{
+    display: inline;
+    margin-right: 5%;
+}
+
+.navLink a{
+    font-family: 'Roboto', sans-serif;
+    color: #E5E7EB;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navLink a:hover{
+    color: #3882F6;
+}
+
+.about-us-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #F9FAF8;
+    font-weight: 800;
+    background-image: url(../images/header-background.png);
+    background-size: 100% 100%;
+    height: 350px;
+}
+
+.about-us-head-text{
+    margin: 0 15% 0 15%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-us-head-text h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.about-us-head-text p{
+    color: #F9FAF8;
+    font-weight: 400;
+    margin: 0;
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #1F2937;
+    margin: 5% 15% 0 15%;
+}
+
+.about-us-text-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 5% 0;
+}
+
+.about-us-text{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.about-us-text h2{
+    font-size: 38px;
+    color: #F9FAF8;
+    font-weight: 800;
+    margin: 0 0 2% 0;
+}
+
+.about-us-text p{
+    line-height: 1.6;
+    text-align: justify;
+    color: #F9FAF8;
+}
+
+.mission{
+    margin-right: 3%;
+    padding-right: 3%;
+}
+
+.mission img, .values img{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.values{
+    margin-left: 3%;
+    padding-left: 3%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937 ;
+    color: #F9FAF8;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+}
+
+#go-up{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    box-shadow: 0 3px 3px  #96a5c3;
+}
+
+#go-up:hover{
+    background-color: #1F2937;
+    border: 1px solid #F9FAF8;
+    color: #F9FAF8;
+}  
+@media only screen and (max-width: 1120px) {
+    .about-us-text-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mission, .values{
+        margin: 5% 0 0 0;
+        padding: 0;
+    }
+    .values-column{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    .mission img, .values img{
+        margin-bottom: 5%;
+    }
+    .about-us-content{
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .navLink a{
+        font-size: 12px;
+    }
+
+    .about-us-head{
+        height: 500px;
+    }
+
+    .about-us-content{
+        margin: 0;
+    }
+
+    .about-us-text-row{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .about-us-text{
+        margin: 0 15% 0 15%;
+    }
+
+    .about-us-text p{
+        margin: 0;
+    }
+
+    .mission{
+        padding: 5% 15% 5% 15%;
+    }
+
+    .values{
+        padding: 5% 15% 5% 15%;
+        margin:0;
+    }
+
+    .values-column{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mission img, .values img{
+        width: 100%;
+        margin: 0;
+    }
+
+    #go-up {
+        margin: 5% 0 5% 15%;
+    }
+
+    .footer{
+        margin-top: 10%;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 507px) {
+    .navLink a{
+        font-size: 7px;
+    }
+
+    .about-us-head-text h1{
+        margin-top: 0;
+        padding-top: 15%;
+        display:block;
+    }
+
+    .about-us-head{
+        height: 600px;
+    }
+
+    .about-us-text p{
+        text-align: start;
+    }
+}
