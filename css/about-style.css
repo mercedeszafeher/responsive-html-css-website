@@ -13,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #1F2937;
 }
 .navbar{
     display: flex;
@@ -103,12 +104,11 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: 400;
-    background-color: #FFFFFF;
 }
 
 .about-us-text h2{
     font-size: 38px;
-    color: #1F2937;
+    color: #F9FAF8;
     font-weight: 800;
     margin: 0 0 2% 0;
 }
@@ -116,6 +116,7 @@ body{
 .about-us-text p{
     line-height: 1.6;
     text-align: justify;
+    color: #F9FAF8;
 }
 
 .mission{
@@ -156,6 +157,7 @@ body{
 
 #go-up:hover{
     background-color: #1F2937;
+    border: 1px solid #F9FAF8;
     color: #F9FAF8;
 }  
 @media only screen and (max-width: 1120px) {
