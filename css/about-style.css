@@ -26,10 +26,10 @@ body{
 }
 
 .navbar img{
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    margin-left: 15%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .navbar ul{
