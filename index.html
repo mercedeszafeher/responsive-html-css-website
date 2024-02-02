@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snow Rider</title>
+    <title>Snow Rider | Home</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./images/logo.png" alt="Logo" width="130px" />
-      </div>
       <nav>
-        <ul>
+        <ul class="main-nav">
+          <li class="push-right">
+            <a href=""><img src="./images/logo.png" alt="" /></a>
+          </li>
           <li><a href="#">Home</a></li>
-          <li><a href="./pages/about.html">About Us</a></li>
-          <li><a href="./pages/product-catalog.html">Product</a></li>
+          <li><a href="./pages/about.html">Who we are</a></li>
+          <li><a href="./pages/product-catalog.html">Products</a></li>
           <li><a href="./pages/blog-news.html">Our Blog</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-          <li><a href="" class="signup-btn">Sign Up</a></li>
+          <li><a href="./pages/contact.html">Contact us</a></li>
+          <li><a href="./pages/sign-up.html" id="signup-btn" type="button">Sign Up</a></li>
         </ul>
       </nav>
     </header>
@@ -27,21 +27,24 @@
     <main>
       <section>
         <div class="content-left">
-          <h1>Snow</h1>
-          <h2>Rider</h2>
-          <p>“Riding until the snow melts and the sun goes down.” — Unknown</p>
-          <button class="cta">Learn More</button>
+          <h2 id="first-row">Ride Your Dream</h2>
+          <h2 id="second-row">destination with</h2>
+          <h2 id="third-row">SnowRider.</h2>
+          <br>
+          <p id="qoute">“Riding until the snow melts and the sun goes down.” — Unknown</p>
+          <br>
+          <button class="cta" id="explore-more" type="button">Explore More</button>
         </div>
       </section>
       <section>
         <div class="content-right">
-          <img src="./images/snowboarder.jpeg" class="snowboarder" />
+          <img src="./images/snowboard1.png" class="snowboarder" />
         </div>
       </section>
     </main>
 
     <footer>
-      <p>® All rights reserved</p>
+      <p>&copy;Snow Rider, All rights reserved 2024</p>
     </footer>
   </body>
 </html>
