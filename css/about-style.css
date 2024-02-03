@@ -13,53 +13,99 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #1F2937;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #1F2937;
-    height: 80px;
-    padding: 0 0 0 15%;
+:root {
+    --primary-color: #1f2937;
+    --secondary-color: #e5e7eb;
+    --text-color: #f9faf8;
+    --button-color: #3882f6;
+    --quote-text: #1f2937;
 }
 
-.navbar img{
-    width: 4rem;
-    height: 4rem;
-    object-fit: cover;
-    border-radius: 50%;
+/* Header Section */
+header {
+background-color: var(--quote-text);
+color: var(--secondary-color);
+margin: 0 auto;
 }
 
-.navbar ul{
-    display: flex;
-    flex:2;
-    justify-content: end;
-    padding-right: 10%;
+.main-nav {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+font-size: 18px;
+margin: 0;
+padding: 0 7em;
+gap: 1.5em;
 }
 
-.navLink{
-    display: inline;
-    margin-right: 5%;
+.push_right {
+margin-right: auto;
+font-size: 24px;
+color: var(--text-color);
 }
 
-.navLink a{
-    font-family: 'Roboto', sans-serif;
-    color: #E5E7EB;
-    font-size: 18px;
-    text-decoration: none;
+.push_right img {
+width: 4rem;
+height: 4rem;
+object-fit: cover;
+border-radius: 50%;
 }
 
-.navLink a:hover{
-    color: #3882F6;
+.main-nav li {
+padding: 15px 0;
 }
+
+a {
+color: var(--secondary-color);
+text-decoration: none;
+}
+
+a:hover {
+color: var(--button-color);
+}
+  
+  @media only screen and (max-width: 800px) {
+    .main-nav {
+      font-size: 0.65em;
+      gap: 0;
+    }
+    .main-nav li {
+      padding: 10px;
+    }
+    .push_right {
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .push_right img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .main-nav {
+      padding: 0 3em;
+      font-size: 0.5em;
+    }
+    .main-nav li {
+      padding: 5px;
+    }
+    .push_right {
+      font-size: 15px;
+    }
+    .push_right img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 
 .about-us-head{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #F9FAF8;
+    color: var(--text-color);
     font-weight: 800;
     background-image: url(../images/header-background.png);
     background-size: 100% 100%;
@@ -67,7 +113,7 @@ body{
 }
 
 .about-us-head-text{
-    margin: 0 15% 0 15%;
+    margin: 0 7em 0 7em;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
 }
@@ -80,7 +126,7 @@ body{
 }
 
 .about-us-head-text p{
-    color: #F9FAF8;
+    color: var(--text-color);
     font-weight: 400;
     margin: 0;
 }
@@ -89,15 +135,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
-    color: #1F2937;
-    margin: 5% 15% 0 15%;
+    color: var(--primary-color);
+    margin: 5em 7em 0 7em;
 }
 
 .about-us-text-row{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 5% 0;
+    margin: 0 0 3em 0;
 }
 
 .about-us-text{
@@ -108,7 +154,7 @@ body{
 
 .about-us-text h2{
     font-size: 38px;
-    color: #F9FAF8;
+    color: var(--primary-color);
     font-weight: 800;
     margin: 0 0 2% 0;
 }
@@ -116,50 +162,50 @@ body{
 .about-us-text p{
     line-height: 1.6;
     text-align: justify;
-    color: #F9FAF8;
+    color: var(--primary-color);
 }
 
 .mission{
-    margin-right: 3%;
-    padding-right: 3%;
+    margin-right: 3em;
+    padding-right: 3em;
 }
 
 .mission img, .values img{
-    width: 500px;
+    width: 600px;
     height: auto;
     border-radius: 20px;
 }
 
 .values{
-    margin-left: 3%;
-    padding-left: 3%;
+    margin-left: 3em;
+    padding-left: 3em;
 }
 
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937 ;
-    color: #F9FAF8;
+    background-color: var(--primary-color) ;
+    color: var(--text-color);
     width: 100%;
     height: 80px;
     bottom: 0;
 }
 
 #go-up{
-    background-color: #3882F6;
-    color: #F9FAF8;
+    background-color: var(--button-color);
+    color: var(--text-color);
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 3em;
     text-decoration: none;
     box-shadow: 0 3px 3px  #96a5c3;
 }
 
 #go-up:hover{
-    background-color: #1F2937;
-    border: 1px solid #F9FAF8;
-    color: #F9FAF8;
+    background-color: var(--primary-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
 }  
 @media only screen and (max-width: 1120px) {
     .about-us-text-row{
@@ -168,7 +214,7 @@ body{
         align-items: center;
     }
     .mission, .values{
-        margin: 5% 0 0 0;
+        margin: 3em 0 0 0;
         padding: 0;
     }
     .values-column{
