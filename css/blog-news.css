@@ -26,15 +26,12 @@ header {
 }
 
 body {
+    background-color: #1f293773;
     transition: all 0.3s linear;
     margin: auto 0;
     font-family: "Roboto", sans-serif;
-}
-
-header {
-    background-color: var(--quote-text);
-    color: var(--secondary-color);
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
 }
 
 .main-nav {
@@ -74,15 +71,6 @@ a {
 a:hover {
     color: var(--button-color);
   }
-
-html {
-    background: var(--primary-color);
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-}
-  
 
   
 .header {
