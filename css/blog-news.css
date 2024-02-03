@@ -26,11 +26,16 @@ header {
 }
 
 body {
+    background: #1f293784;
+    color: var(--quote-text);
+    font-family: "Roboto", sans-serif;
     transition: all 0.3s linear;
     margin: auto 0;
-    font-family: "Roboto", sans-serif;
+    min-width: 300px;
     padding-top: 100px;
-    color: var(--quote-text);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
     
 }
 
@@ -76,16 +81,6 @@ a {
 a:hover {
     color: var(--button-color);
   }
-
-html {
-    background: var(--primary-color);
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-}
-  
-
   
 .header {
     color: white;
@@ -119,12 +114,15 @@ html {
 .column {
     flex: 1;
     flex-direction: column;
+    
 }
   
 .article {
     background: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #666;
+    border: 3px solid #3882f6;
+    border-radius: 18px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -144,6 +142,7 @@ html {
     padding-top: 75%;
     position: relative;
     width: 100%;
+    border-radius: 18px;
 }
   
 .article-image img {
@@ -153,6 +152,7 @@ html {
     position: absolute;
     top: 0;
     width: 100%;
+    border-radius: 18px;
 }
   
 .article-image.is-3by2 {
