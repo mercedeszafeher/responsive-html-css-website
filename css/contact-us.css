@@ -79,7 +79,7 @@ a:hover{
 }
 
 main{
-    padding: 2%;
+    padding: 2% 9%;
 }
 
 article{
@@ -92,6 +92,7 @@ article{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: start;
     padding: 0 1.5%;
 }
 
@@ -215,11 +216,16 @@ button{
     margin-top: 15px;
 }
 
-.developersContainer #aboutDev {
+.developersContainer .aboutDev {
     box-sizing: border-box;
     border: 2px, solid, var(--button-color);
     border-radius: 1rem;
     width: 12rem;
+}
+
+#raissa{
+    height: 150px;
+    width: auto;
 }
 
 #rollUp{
@@ -233,6 +239,21 @@ footer{
     color: var(--text-color);
     text-align: center;
 }
+
+#go-up{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 3em;
+    text-decoration: none;
+    box-shadow: 0 3px 3px  #96a5c3;
+}
+
+#go-up:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}  
 
 @media only screen and (max-width: 850px){
     .maiNav{
