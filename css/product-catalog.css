@@ -47,8 +47,8 @@ header {
 }
 
 .push_right img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -102,7 +102,6 @@ a:hover {
 #product-links {
   background-color: var(--primary-color);
 }
-
 .product-nav {
   display: flex;
   justify-content: center;

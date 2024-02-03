@@ -1,0 +1,264 @@
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url(fonts/Roboto-Black.ttf)
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #1f2937;
+    --secondary-color: #e5e7eb;
+    --text-color: #f9faf8;
+    --button-color: #3882f6;
+    --quote-text: #1f2937;
+}
+
+body{
+    transition: all o.3s linear;
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--text-color);
+    padding: 0;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mainNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 7em;
+    gap: 1.5em;
+}
+
+.pushRight{
+
+    margin-right: auto;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.pushRight img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mainNav li{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.list{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--button-color);
+}
+
+main{
+    padding: 2%;
+}
+
+article{
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5%;
+}
+
+.firstContact{
+    vertical-align: top;
+    padding-bottom: 15%;
+}
+
+h1{
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 24px;
+    align-self: center;
+}
+
+img{
+    margin: 1%;
+}
+
+
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+
+.emailHeader{
+    display: flex;
+
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+.emailForm{
+    padding: 1% 0;
+}
+
+input{
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 55rem;
+    height: 30px;
+    width: 20rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+select{
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 55rem;
+    height: 30px;
+    width: 20rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.resume{
+    content: 'Upload your resume';
+    display: inline-block;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    height: 40px;
+    border-radius: none;
+    font-size: 15px;
+    text-align: center;
+    margin: 2%;
+}
+
+.resume::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+textarea{
+    height: 8rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+button{
+    border: none;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border-radius: 55rem;
+    height: 3rem;
+    width: 15rem;
+    font-size: 18px;
+    margin: 2%;
+}
+
+.whatsapp{
+    background-color: none;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.map{
+    border-radius: 1rem;
+}
+
+
+.developersContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+.developersContainer img{
+    border-radius: 1rem;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.developersContainer #aboutDev {
+    box-sizing: border-box;
+    border: 2px, solid, var(--button-color);
+    border-radius: 1rem;
+    width: 12rem;
+}
+
+#rollUp{
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px){
+    .maiNav{
+        font-size: 0,5em;
+        padding: 0;
+    }
+
+    .pushRight{
+        font-size: 15px;
+    }
+
+    article{
+        flex-wrap: wrap;
+    }
+    textarea{
+        width: 20 rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .mainNav{
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .list{
+        flex-direction: column;
+    }
+}
