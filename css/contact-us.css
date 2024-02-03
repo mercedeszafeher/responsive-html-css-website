@@ -35,6 +35,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: right;
     list-style: none;
     font-size: 18px;
     margin: 0;
@@ -43,6 +44,7 @@ header{
 }
 
 .pushRight{
+
     margin-right: auto;
     font-size: 24px;
     color: var(--text-color);
@@ -56,7 +58,16 @@ header{
 }
 
 .mainNav li{
-    margin: 15px 0;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.list{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
 }
 
 a{
@@ -128,6 +139,7 @@ input{
     height: 30px;
     width: 20rem;
     text-align: center;
+    font-size: 15px;
 }
 
 select{
@@ -138,6 +150,7 @@ select{
     height: 30px;
     width: 20rem;
     text-align: center;
+    font-size: 15px;
 }
 
 .resume{
@@ -149,7 +162,6 @@ select{
     border-radius: none;
     font-size: 15px;
     text-align: center;
-
     margin: 2%;
 }
 
@@ -164,6 +176,7 @@ textarea{
     color: var(--primary-color);
     border-radius: 1rem;
     text-align: center;
+    font-size: 15px;
 }
 
 button{
@@ -198,17 +211,15 @@ button{
 
 .developersContainer img{
     border-radius: 1rem;
-    margin: none;
-    box-shadow: var(--primary-color);
+    align-self: center;
+    margin-top: 15px;
 }
 
-.developersContainer section{
-    align-items: center;
-    border: 3px;
-    border-color: var(--button-color);
+.developersContainer #aboutDev {
+    box-sizing: border-box;
+    border: 2px, solid, var(--button-color);
     border-radius: 1rem;
-    width: 10rem;
-
+    width: 12rem;
 }
 
 #rollUp{
@@ -229,18 +240,8 @@ footer{
         padding: 0;
     }
 
-    .mainNav ul{
-        display: flex;
-        justify-self: left;
-    }
     .pushRight{
         font-size: 15px;
-        flex-direction: column;
-    }
-
-    .pushRight img{
-        width: 3rem;
-        height: 3rem;
     }
 
     article{
@@ -248,5 +249,16 @@ footer{
     }
     textarea{
         width: 20 rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .mainNav{
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .list{
+        flex-direction: column;
     }
 }
