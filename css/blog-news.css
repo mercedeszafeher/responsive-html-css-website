@@ -26,13 +26,23 @@ header {
 }
 
 body {
-    background-color: #1f293773;
+    background: #1f293784;
+    color: var(--quote-text);
+    font-family: "Roboto", sans-serif;
     transition: all 0.3s linear;
     margin: auto 0;
-    font-family: "Roboto", sans-serif;
-    position: fixed;
-    width: 100%;
+    min-width: 300px;
+    padding-top: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    
 }
+
+div, h2, p, figure {
+    margin: 0;
+    padding: 0;
+  }
 
 .main-nav {
     display: flex;
@@ -71,7 +81,6 @@ a {
 a:hover {
     color: var(--button-color);
   }
-
   
 .header {
     color: white;
@@ -217,5 +226,3 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-
-}
