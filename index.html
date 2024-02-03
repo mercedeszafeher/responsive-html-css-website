@@ -3,45 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snow Rider</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <title>Snow Rider | Homepage</title>
+    <!-- Product Catalog -->
+    <link rel="stylesheet" href="./css/product-catalog.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header>
-      <div class="logo">
-        <img src="./images/logo.png" alt="Logo" width="130px" />
-      </div>
       <nav>
-        <ul>
+        <ul class="main-nav">
+          <li class="push_right">
+            <a href=""><img src="../images/logo.png" alt="" /></a>
+          </li>
           <li><a href="#">Home</a></li>
           <li><a href="./pages/about.html">About Us</a></li>
           <li><a href="./pages/product-catalog.html">Product</a></li>
-          <li><a href="./pages/blog-news.html">Our Blog</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-          <li><a href="" class="signup-btn">Sign Up</a></li>
+          <li><a href="./pages/blog-news.html">Blog</a></li>
+          <li><a href="./pages/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Main Section -->
     <main>
-      <section>
-        <div class="content-left">
-          <h1>Snow</h1>
-          <h2>Rider</h2>
-          <p>“Riding until the snow melts and the sun goes down.” — Unknown</p>
-          <button class="cta">Learn More</button>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <h1>This website is awesome</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              ratione!
+            </p>
+            <a href="#cta"><button type="button">Sign Up</button></a>
+          </div>
+          <div class="hero-img">
+            <img src="./images/1.jpg" alt="" />
+          </div>
         </div>
       </section>
-      <section>
-        <div class="content-right">
-          <img src="./images/snowboarder.jpeg" class="snowboarder" />
+
+      <!-- Info Section -->
+      <section id="info">
+        <h2>Some random information.</h2>
+        <div class="wrapper-grid">
+          <figure class="box-img">
+            <img src="./images/products/1.jpg" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              cum.
+            </figcaption>
+          </figure>
+          <figure class="box-img">
+            <img src="./images/products/2.jpg" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              cum.
+            </figcaption>
+          </figure>
+          <figure class="box-img">
+            <img src="./images/products/10.jpg" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              cum.
+            </figcaption>
+          </figure>
+          <figure class="box-img">
+            <img src="./images/products/8.jpg" alt="" />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              cum.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="quote">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            dolorum consequuntur voluptates rerum quasi distinctio nulla
+            repellat fuga quos! Repudiandae.
+          </p>
+          <span class="author">-Thor</span>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="cta">
+        <div class="wrapper-cta">
+          <div class="cta-tex">
+            <h3>Call to action! It's time!</h3>
+            <p>
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+          <a href=""><button class="cta-btn">Sign Up</button></a>
         </div>
       </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-      <p>® All rights reserved</p>
+      <!-- Copyright -->
+      <p>&copy; Snow Rider, All Right Reserved 2024</p>
     </footer>
   </body>
 </html>
