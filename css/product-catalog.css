@@ -27,8 +27,13 @@ header {
   background-color: var(--quote-text);
   color: var(--secondary-color);
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+nav {
+  width: 60%;
+}
 .main-nav {
   display: flex;
   justify-content: center;
@@ -62,7 +67,26 @@ a {
 a:hover {
   color: var(--button-color);
 }
-
+@media only screen and (max-width: 2400px) {
+  nav {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  nav {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1830px) {
+  nav {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1830px) {
+  nav {
+    width: 93%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .main-nav {
     font-size: 0.65em;
@@ -76,6 +100,9 @@ a:hover {
   }
 }
 @media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+  }
   .push_right img {
     width: 3rem;
     height: 3rem;
@@ -83,7 +110,7 @@ a:hover {
 }
 @media only screen and (max-width: 500px) {
   .main-nav {
-    padding: 0 3em;
+    padding: 0 2em;
     font-size: 0.5em;
   }
   .main-nav li {
@@ -109,7 +136,7 @@ a:hover {
   list-style: none;
   font-size: 18px;
   margin: 0;
-  padding: 0 7em;
+  padding: 0 35em;
   height: 15vh;
   gap: 1.5em;
 }
@@ -130,9 +157,7 @@ a:hover {
 }
 @media only screen and (max-width: 900px) {
   .product-nav {
-    .product-nav {
-      gap: 0.6em;
-    }
+    gap: 0.6em;
   }
   .product-nav li {
     padding: 0;
@@ -157,7 +182,7 @@ a:hover {
 @media only screen and (max-width: 750px) {
   .product-nav {
     font-size: 14px;
-    padding: 0 5em;
+    padding: 0 1em;
   }
   .product-nav li {
     padding: 0px;
@@ -170,7 +195,6 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .product-nav {
     font-size: 12px;
-    padding: 0 1em;
   }
   .product-nav li {
     padding: 0;
@@ -198,7 +222,7 @@ a:hover {
 .product-section {
   background-color: var(--text-color);
   margin: 0;
-  padding: 1em 7em;
+  padding: 1em 41em;
   text-align: center;
 }
 .product-section h2 {
@@ -230,8 +254,42 @@ a:hover {
   border: 3px solid var(--button-color);
   border-radius: 1.3em;
 }
-
+@media only screen and (max-width: 2400px) {
+  .product-nav {
+    padding: 0 27em;
+  }
+  .product-section {
+    padding: 1em 30em;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  .product-nav {
+    padding: 0 20em;
+  }
+  .product-section {
+    padding: 1em 22em;
+  }
+}
+@media only screen and (max-width: 1830px) {
+  .product-nav {
+    padding: 0 10em;
+  }
+  .product-section {
+    padding: 1em 10em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+  }
+  .product-nav {
+    padding: 0 7em;
+  }
+}
 @media only screen and (max-width: 600px) {
+  .product-nav {
+    padding: 0 0em;
+  }
   .grid-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
@@ -270,6 +328,9 @@ main {
   left: 10px;
   z-index: 300;
   border-radius: 10px;
+}
+#go-up:hover {
+  background-color: #0d5fe0;
 }
 
 @media only screen and (max-width: 600px) {
