@@ -1,13 +1,15 @@
-@font-face{
+@font-face {
     font-family: 'Roboto', sans-serif;
-    src: url(fonts/Roboto-Black.ttf)
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype'), url(./fonts/Roboto-Black.ttf) format('truetype'),
+    url(./fonts/Roboto-Italic.ttf) format('truetype'),url(./fonts/Roboto-LightItalic.ttf) format('truetype');
+
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --primary-color: #1f2937;
     --secondary-color: #e5e7eb;
     --text-color: #f9faf8;
@@ -16,26 +18,22 @@
 }
 
 body{
-    transition: all o.3s linear;
-    margin: auto 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--text-color);
+    margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    background-color: var(--primary-color);
+header {
+    background-color: var(--quote-text);
     color: var(--secondary-color);
     margin: 0 auto;
     width: 100%;
 }
 
-.mainNav{
+.mainNav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: right;
     list-style: none;
     font-size: 18px;
     margin: 0;
@@ -43,43 +41,85 @@ header{
     gap: 1.5em;
 }
 
-.pushRight{
-
+.pushRight {
     margin-right: auto;
     font-size: 24px;
     color: var(--text-color);
 }
 
-.pushRight img{
+.pushRight img {
     width: 4rem;
     height: 4rem;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.mainNav li{
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.mainNav li {
+    padding: 15px 0;
 }
-.list{
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;  
+    
+a {
+color: var(--secondary-color);
+text-decoration: none;
+}
+    
+a:hover {
+color: var(--button-color);
 }
 
-a{
-    color: var(--text-color);
-    text-decoration: none;
-}
-a:hover{
-    color: var(--button-color);
+@media only screen and (max-width: 800px) {
+    .mainNav {
+        font-size: 0.65em;
+        gap: 0;
+    }
+    .mainNav li {
+        padding: 10px;
+    }
+    .pushRight {
+        font-size: 16px;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+    .pushRight img {
+        width: 3rem;
+        height: 3rem;
+    }
+    }
+    @media only screen and (max-width: 500px) {
+    .mainNav {
+        padding: 0 3em;
+        font-size: 0.5em;
+    }
+    .mainNav li {
+        padding: 5px;
+    }
+    .pushRight {
+        font-size: 15px;
+    }
+    .pushRight img {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 main{
-    padding: 2% 9%;
+    padding: 2% 3%;
+}
+
+.picture{
+    margin-right: 15px;
+    vertical-align: top;
+    position: absolute;
+    top: 0%;
+}
+
+.image{
+    margin: 1%;
+    align-self: center;
+    border-radius: 1rem;
+    max-width: 530px;
+    min-width: 200px;
+    height: auto;
 }
 
 article{
@@ -87,40 +127,77 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 0 1.5%;
+    margin-left: 15px;
+    position: relative;
 }
 
 .firstContact{
-    vertical-align: top;
-    padding-bottom: 15%;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    margin: 2%;
+}
+.firstContact p{
+    color: var(--text-color);
+    margin: 0 10%;
 }
 
-h1{
+h2{
     align-items: center;
-    color: var(--primary-color);
-    font-size: 24px;
-    align-self: center;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-left: 42%;
 }
 
-img{
-    margin: 1%;
+.phoneContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px, solid, var(--button-color);
+    border-radius: 1rem;
+    background-color: var(--button-color);
+    padding: 1%;
+    margin: 0 2%;
 }
 
+.contactText{
+    margin-bottom: 2%;
+}
+
+.contactText p{
+    color: var(--text-color);
+    margin-bottom: 2%;
+}
 
 .phone{
     display: flex;
     flex-direction: row;
+    margin: 2%;
+}
+
+.phone p{
+    color: var(--text-color);
+    margin: 1%;
+}
+
+.whatsappContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+
+.whatsappContainer a{
+    background-color: none;
+    display: flex;
+}
+
+.whatsappContainer p {
+    color: var(--text-color);
+    margin: 2%;
 }
 
 .emailHeader{
     display: flex;
-
 }
 
 .email{
@@ -128,56 +205,113 @@ img{
     flex-direction: column;
 }
 
-.emailForm{
-    padding: 1% 0;
+.emailContainer{
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    max-width: 1000px;
+    min-width: 200px;
+    align-self: center;
+    margin-bottom: 2%;
 }
 
-input{
-    border: none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+.emailForm{
+    padding: 15px 0;
+}
+
+.emailForm label{
+    color: var(--text-color);
+    padding: 15px 10px;
+    font: 200;
+}
+
+.emailForm input{
+    border: 2px, solid, var(--button-color);
+    background-color: var(--text-color);
+    color: var(--quote-text);
     border-radius: 55rem;
     height: 30px;
-    width: 20rem;
+    width: 87%;
     text-align: center;
     font-size: 15px;
+    padding: 10px 15px;
+    margin: 2%;
+}
+.subjectForm{
+    color: var(--text-color);
+    padding: 15px 10px;
+    font: 200;
 }
 
 select{
-    border: none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    border: 2px, solid, var(--button-color);
+    background-color: var(--text-color);
+    color: var(--quote-text);
     border-radius: 55rem;
-    height: 30px;
-    width: 20rem;
+    height: 50px;
+    width: 95%;
     text-align: center;
     font-size: 15px;
-}
-
-.resume{
-    content: 'Upload your resume';
-    display: inline-block;
-    background-color: var(--button-color);
-    color: var(--text-color);
-    height: 40px;
-    border-radius: none;
-    font-size: 15px;
-    text-align: center;
+    padding: 10px 15px;
     margin: 2%;
 }
 
-.resume::-webkit-file-upload-button{
-    visibility: hidden;
+.select-selected{
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.select-items div, .select-selected{
+    border-radius: 1rem;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.input[type=file] {
+    margin-top: 1rem;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--button-color);
+    border-radius: 55rem;
+    height: 3rem;
+    width: 15rem;
+    font-size: 18px;
+    margin: 2%;
+}
+
+
+input.resume::file-selector-button {
+    font-weight: bold;
+    color: var(--text-color);
+     background-color: var(--button-color);
+     padding: 0.5em;
+    border: none;
+    border-radius: 1rem;
 }
 
 textarea{
     height: 8rem;
     border: none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--text-color);
+    color: var(--quote-text);
     border-radius: 1rem;
     text-align: center;
     font-size: 15px;
+    resize: none;
+    padding: 15px;
+    width: 85%;
+    margin: 3%;
 }
 
 button{
@@ -191,56 +325,97 @@ button{
     margin: 2%;
 }
 
-.whatsapp{
-    background-color: none;
-    width: 30px;
-    border-radius: 50%;
-
-}
-
-.map{
-    border-radius: 1rem;
-}
-
-
-.developersContainer{
+.mapContainer{
     display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 1.5%;
+    width: 70%;
+    height: 30%;
+}
+
+.map h2{
+    color: var(--primary-color);
+    margin-left: 40%;
+}
+
+#map{
+    width: 100%; 
+    height: auto;
+}
+
+.workContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.workContainer h2{
+    color: var(--text-color);
+}
+
+.workContainer p{
+    color: var(--text-color);
+    margin: 0 5%;
+}
+
+.developers h2{
+    margin: 2% 30%;
+    width: 40%;
+
+
+}
+.developersContainer{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 2%;
+    margin-top: 2%;
+}
+
+.pairDevContainer{
+    display: flex;
 }
 
 .developersContainer img{
     border-radius: 1rem;
     align-self: center;
-    margin-top: 15px;
+    margin: 15px 20px 5px 20px;
 }
 
 .developersContainer .aboutDev {
     box-sizing: border-box;
-    border: 2px, solid, var(--button-color);
+    border: 1px, solid, var(--button-color);
     border-radius: 1rem;
     width: 12rem;
+    background-color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
 }
 
-#raissa{
-    height: 150px;
-    width: auto;
+.aboutDev h4{
+   margin-left: 25px;
 }
 
-#rollUp{
-    color: var(--primary-color);
-    font-size: 18px;
+.aboutDev section{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 
-footer{
-    background-color: var(--primary-color);
-    padding: 1em;
-    color: var(--text-color);
-    text-align: center;
+#linkedin{
+    border-radius: 0;
 }
 
-#go-up{
+#goUp{
     background-color: var(--button-color);
     color: var(--text-color);
     padding: 10px;
@@ -255,10 +430,22 @@ footer{
     color: var(--text-color);
 }  
 
+footer{
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
 @media only screen and (max-width: 850px){
     .maiNav{
         font-size: 0,5em;
         padding: 0;
+    }
+
+    .image{
+        display: none;
     }
 
     .pushRight{
@@ -271,15 +458,54 @@ footer{
     textarea{
         width: 20 rem;
     }
+    
+    .map h2{
+        margin-left: 30%;
+    }
+
+    .developers h2{
+        align-self: center;
+    }
 }
 
 @media only screen and (max-width: 650px){
     .mainNav{
         padding: 5px;
     }
+    .phoneContainer{
+        flex-direction: column;
+    }
 }
+
 @media only screen and (max-width: 550px){
     .list{
+        flex-direction: column;
+    }
+    .h2{
+        margin-right: 20%;
+        font-size: 20px;
+    }
+    .map h2{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    .iframe{
+        width: 45%;
+    }
+    .workContainer h2{
+        margin-left: 30%;
+        font-size: 20px;
+    }
+    .workContainer{
+        margin-left: 7%;
+    }
+    .developersContainer h2{
+        margin-left: 20%;
+        width: 80%;
+        font-size: 20px;
+    }
+    .pairDevContainer{
+        display: flex;
         flex-direction: column;
     }
 }
